@@ -46,7 +46,7 @@ const Navbar = () => {
   return (
     <AppBar position="sticky">
       <StyledToolbar>
-        <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>PABLO DEV</Typography>
+        <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>SOCIAL APP</Typography>
         <PetsIcon sx={{ display: { xs: "block", sm: "none" } }} />
         <Search><InputBase placeholder="search..." /></Search>
         <Icons>
