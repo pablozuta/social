@@ -16,7 +16,8 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 const Sidebar = () => {
   return (
-    <Box  flex={1} p={2} sx={{display:{xs: "none", sm: "block"}}}>
+    <Box  flex={1} p={1.5} sx={{display:{xs: "none", sm: "block"}}}>
+      <Box position="fixed">
         <List>
           
           <ListItem disablePadding>
@@ -24,7 +25,7 @@ const Sidebar = () => {
               <ListItemIcon>
                 <HomeIcon />
               </ListItemIcon>
-              <ListItemText primary="Homepage" />
+              <ListItemText primary="Home" />
             </ListItemButton>
           </ListItem>
         
@@ -97,7 +98,7 @@ const Sidebar = () => {
         
         </List>
       
-
+        </Box>
 
     </Box>
   )

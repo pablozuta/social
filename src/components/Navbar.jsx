@@ -44,7 +44,7 @@ const UserBox = styled(Box)(({ theme }) => ({
 const Navbar = () => {
   const [open, setopen] = useState(false)
   return (
-    <AppBar position="sticky">
+    <AppBar position="sticky" sx={{ bgcolor: "pink" }} >
       <StyledToolbar>
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>SOCIAL APP</Typography>
         <PetsIcon sx={{ display: { xs: "block", sm: "none" } }} />
