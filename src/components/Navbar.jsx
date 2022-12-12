@@ -5,6 +5,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 import  { useState } from 'react';
 
 
@@ -44,10 +45,12 @@ const UserBox = styled(Box)(({ theme }) => ({
 const Navbar = () => {
   const [open, setopen] = useState(false)
   return (
-    <AppBar position="sticky" sx={{ bgcolor: "pink" }} >
+
+    <AppBar position="sticky"  sx={{ bgcolor: "pink" }}  >
       <StyledToolbar>
-        <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>SOCIAL APP</Typography>
-        <PetsIcon sx={{ display: { xs: "block", sm: "none" } }} />
+        <Typography variant="h6" color="#121212"  sx={{ display: { xs: "none", sm: "block" }}}>SOCIAL APP </Typography>
+
+        <AirportShuttleIcon  from sx={{ display: { xs: "block", sm: "none" } }} />
         <Search><InputBase placeholder="search..." /></Search>
         <Icons>
           <Badge badgeContent={4} color="error">

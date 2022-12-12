@@ -28,7 +28,7 @@ function Post(props) {
       <MoreVertIcon />
     </IconButton>
   }
-  title="Travel"
+  title={props.title}
   subheader="December 11, 2022"
 />
 
@@ -40,7 +40,7 @@ function Post(props) {
 />
 <CardContent>
   <Typography variant="body2" color="text.secondary">
-    Make plans lightly. It definitely helps to make plans. But do it with the expectation that any of them could change. Nothing is set in stone. Could you view them as fluid, while trying to stick to them as best you can?
+  {props.textpost}
 
   </Typography>
 </CardContent>
