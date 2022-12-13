@@ -1,3 +1,4 @@
+
 import { Box, Switch } from "@mui/material"
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -30,7 +31,7 @@ const Sidebar = ({mode, setMode}) => {
           </ListItem>
         
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#home">
+            <ListItemButton component="a" href="https://svelte.dev/">
               <ListItemIcon>
                 <ArticleIcon />
               </ListItemIcon>

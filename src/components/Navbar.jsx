@@ -1,6 +1,5 @@
-import { AppBar, Box, Toolbar, styled, Typography, InputBase, Avatar, Button } from "@mui/material";
-import PetsIcon from '@mui/icons-material/Pets';
-import Badge from '@mui/material/Badge';
+import { AppBar, Box, Toolbar, styled, Typography, InputBase, Avatar } from "@mui/material";
+
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Menu from '@mui/material/Menu';
@@ -46,19 +45,27 @@ const Navbar = () => {
   const [open, setopen] = useState(false)
   return (
 
-    <AppBar position="sticky"  sx={{ bgcolor: "pink" }}  >
+    <AppBar position="sticky"  sx={{ bgcolor: "#A2CDCB" }}  >
       <StyledToolbar>
-        <Typography variant="h6" color="#121212"  sx={{ display: { xs: "none", sm: "block" }}}>SOCIAL APP </Typography>
+        <Typography variant="h6"   sx={{ display: { xs: "none", sm: "block" }}}>SOCIAL APP </Typography>
 
         <AirportShuttleIcon  from sx={{ display: { xs: "block", sm: "none" } }} />
-        <Search><InputBase placeholder="search..." /></Search>
+
+       
+        <Search>
+          <InputBase placeholder="search..." />
+          
+          </Search>
+        
+        
+
         <Icons>
-          <Badge badgeContent={4} color="error">
+         
             <MailIcon />
-          </Badge>
-          <Badge badgeContent={2} color="error">
+         
+          
             <NotificationsIcon />
-          </Badge>
+         
           <Avatar sx={{ width: 30, height: 30 }} alt="Cindy Baker" src="https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
           onClick={(e)=>setopen(true)}
           />

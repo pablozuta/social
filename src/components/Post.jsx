@@ -19,7 +19,7 @@ function Post(props) {
 
 <CardHeader
   avatar={
-    <Avatar sx={{ bgcolor: "pink" }} aria-label="recipe">
+    <Avatar sx={{ bgcolor: "#A2CDCB" }} aria-label="recipe">
       T
     </Avatar>
   }

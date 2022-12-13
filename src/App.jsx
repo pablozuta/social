@@ -2,8 +2,10 @@ import Feed from "./components/Feed";
 import Navbar from "./components/Navbar";
 import Rightbar from "./components/Rightbar";
 import Sidebar from "./components/Sidebar";
-import { Box, createTheme, CssBaseline, Stack, ThemeProvider } from "@mui/material";
+import { Box, createTheme, Stack, ThemeProvider } from "@mui/material";
 import { useState } from "react";
+
+
 
 
 
@@ -17,6 +19,7 @@ export default function App() {
     }
   })
   return (
+  
     <ThemeProvider theme={darkTheme}>
     
     <Box bgcolor={"background.default"} color={"text.primary"}>
@@ -24,8 +27,8 @@ export default function App() {
 
       <Stack direction="row" spacing={0.1} justifyContent="space-between">
         <Sidebar setMode={setMode} mode={mode}/>
-        <Feed />
-        <Rightbar />
+        <Feed/>
+        <Rightbar/>
       </Stack>
 
     </Box>
