@@ -13,6 +13,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import { Link } from "react-router-dom";
 
 
 const Sidebar = ({mode, setMode}) => {
@@ -22,7 +23,7 @@ const Sidebar = ({mode, setMode}) => {
         <List>
           
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#home">
+            <ListItemButton component={Link} to="/">
               <ListItemIcon>
                 <HomeIcon />
               </ListItemIcon>
@@ -31,7 +32,7 @@ const Sidebar = ({mode, setMode}) => {
           </ListItem>
         
           <ListItem disablePadding>
-            <ListItemButton component="a" href="https://svelte.dev/">
+            <ListItemButton component={Link} to="/pages">
               <ListItemIcon>
                 <ArticleIcon />
               </ListItemIcon>

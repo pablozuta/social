@@ -1,10 +1,7 @@
 import { Box} from "@mui/material"
 import Post from "./Post"
 
-
-
-
-
+// aca se ingresa el componente "Post" pasandole props de url y nombre del post
 const Feed = () => {
   return (
     <Box flex={4} p={1.5}>

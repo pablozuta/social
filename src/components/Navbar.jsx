@@ -1,5 +1,4 @@
 import { AppBar, Box, Toolbar, styled, Typography, InputBase, Avatar } from "@mui/material";
-
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Menu from '@mui/material/Menu';

@@ -4,6 +4,8 @@ import Rightbar from "./components/Rightbar";
 import Sidebar from "./components/Sidebar";
 import { Box, createTheme, Stack, ThemeProvider } from "@mui/material";
 import { useState } from "react";
+import { Route, Routes } from "react-router";
+import Pages from "./components/Pages";
 
 
 
@@ -19,16 +21,26 @@ export default function App() {
     }
   })
   return (
+    
   
     <ThemeProvider theme={darkTheme}>
     
     <Box bgcolor={"background.default"} color={"text.primary"}>
-      <Navbar />
 
-      <Stack direction="row" spacing={0.1} justifyContent="space-between">
-        <Sidebar setMode={setMode} mode={mode}/>
-        <Feed/>
-        <Rightbar/>
+    
+    <Navbar />
+    <Stack direction="row" spacing={0.1} justifyContent="space-between">
+    <Sidebar setMode={setMode} mode={mode}/>
+
+    <Routes>
+    <Route path="/" element={<Feed />}/>
+    <Route path="/pages" element={<Pages />}/>
+    
+
+  
+    </Routes>
+    <Rightbar/>
+        
       </Stack>
 
     </Box>
