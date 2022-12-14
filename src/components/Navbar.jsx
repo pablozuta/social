@@ -14,12 +14,7 @@ const StyledToolbar = styled(Toolbar)({
   justifyContent: "space-between"
 })
 
-const Search = styled("div")(({ theme }) => ({
-  backgroundColor: "white",
-  padding: "0.3rem 10px",
-  borderRadius: theme.shape.borderRadius,
-  width: "38%"
-}));
+
 
 const Icons = styled(Box)(({ theme }) => ({
   display: "none",
@@ -42,40 +37,40 @@ const UserBox = styled(Box)(({ theme }) => ({
 
 
 const Navbar = () => {
+  //implementa el estado del menu de version movil
   const [open, setopen] = useState(false)
   return (
 
-    <AppBar position="sticky"  sx={{ bgcolor: "#A2CDCB" }}  >
-      <StyledToolbar>
-        <Typography variant="h6"   sx={{ display: { xs: "none", sm: "block" }}}>SOCIAL APP </Typography>
+    <AppBar position="sticky"  sx={{ bgcolor: "#A2CDCB" }}>
 
+      <StyledToolbar>
+
+        <Typography variant="h6"   sx={{ display: { xs: "none", sm: "block" }}}>
+          SOCIAL APP 
+        </Typography>
+
+        {/* este icono se mostrara solo en version movil */}
         <AirportShuttleIcon  from sx={{ display: { xs: "block", sm: "none" } }} />
 
-       
-        <Search>
-          <InputBase placeholder="search..." />
-          
-          </Search>
-        
-        
-
-        <Icons>
+          <Icons>
          
             <MailIcon />
-         
-          
             <NotificationsIcon />
          
           <Avatar sx={{ width: 30, height: 30 }} alt="Cindy Baker" src="https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-          onClick={(e)=>setopen(true)}
-          />
+          onClick={(e)=>setopen(true)}/>
+
         </Icons>
+
+
         <UserBox onClick={(e)=>setopen(true)}>
           <Avatar sx={{ width: 30, height: 30 }} alt="Cindy Baker" src="https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           <Typography variant="span">Alice</Typography>
         </UserBox>
-      </StyledToolbar>
 
+      </StyledToolbar>
+      
+      
       <Menu
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
