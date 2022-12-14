@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = ({mode, setMode}) => {
   return (
-    <Box  flex={1} p={1.5} sx={{display:{xs: "none", sm: "block"}}}>
+    <Box  flex={1} p={1.5} sx={{display:{xs: "none", sm: "block"}, marginLeft:"-1rem"}}>
       <Box position="fixed">
         <List>
           
@@ -41,7 +41,7 @@ const Sidebar = ({mode, setMode}) => {
           </ListItem>
         
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#home">
+            <ListItemButton component={Link} to="/groups">
               <ListItemIcon>
                 <GroupIcon />
               </ListItemIcon>
@@ -50,7 +50,7 @@ const Sidebar = ({mode, setMode}) => {
           </ListItem>
         
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#home">
+            <ListItemButton component={Link} to="/market">
               <ListItemIcon>
                 <StorefrontIcon />
               </ListItemIcon>
@@ -59,7 +59,7 @@ const Sidebar = ({mode, setMode}) => {
           </ListItem>
         
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#home">
+            <ListItemButton component={Link} to="/friends">
               <ListItemIcon>
                 <PersonIcon />
               </ListItemIcon>
@@ -68,7 +68,7 @@ const Sidebar = ({mode, setMode}) => {
           </ListItem>
         
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#home">
+            <ListItemButton component={Link} to="/settings">
               <ListItemIcon>
                 <SettingsIcon />
               </ListItemIcon>
@@ -77,7 +77,7 @@ const Sidebar = ({mode, setMode}) => {
           </ListItem>
         
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#home">
+            <ListItemButton component={Link} to="/profile">
               <ListItemIcon>
                 <AccountBoxIcon />
               </ListItemIcon>
@@ -87,7 +87,7 @@ const Sidebar = ({mode, setMode}) => {
         
         
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#home">
+            <ListItemButton >
               <ListItemIcon>
                 <DarkModeIcon />
               </ListItemIcon>

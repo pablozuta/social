@@ -5,6 +5,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 import  { useState } from 'react';
+import { Link } from "react-router-dom";
 
 
 
@@ -90,9 +91,15 @@ const Navbar = () => {
           horizontal: 'right',
         }}
       >
-        <MenuItem >Profile</MenuItem>
-        <MenuItem >My account</MenuItem>
-        <MenuItem >Logout</MenuItem>
+        <MenuItem component={Link} to="/">Home</MenuItem>
+        <MenuItem component={Link} to="/pages">Pages</MenuItem>
+        <MenuItem component={Link} to="/groups">Groups</MenuItem>
+        <MenuItem component={Link} to="/market">Market</MenuItem>
+        <MenuItem component={Link} to="/friends">Friends</MenuItem>
+        <MenuItem component={Link} to="/settings">Settings</MenuItem>
+        <MenuItem component={Link} to="/profile">Profile</MenuItem>
+        <MenuItem onClick={(e)=>setopen(false)}>Close</MenuItem>
+        
       </Menu>
       
     </AppBar>

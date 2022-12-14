@@ -13,8 +13,8 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 
 const Rightbar = () => {
   return (
-    <Box  flex={2} p={1}  sx={{display:{xs: "none", sm: "block"}}}>
-      <Box width={300} >
+    <Box  flex={2}   sx={{display:{xs: "none", sm: "block"}}}>
+      <Box width={300}>
      <Typography variant="h6" fontWeight={300} mt={2}>Friends</Typography>
 
      <AvatarGroup max={6}>

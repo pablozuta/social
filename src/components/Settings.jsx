@@ -1,8 +1,14 @@
-import React from 'react'
+import { Box, Typography } from '@mui/material'
 
 function Settings() {
   return (
-    <div>Settings</div>
+    <Box flex={4} p={1.5}>
+     
+     <Typography variant="h4"   sx={{ display: { xs: "none", sm: "block" }}}> SETTINGS</Typography>
+
+     <img src="" alt="" />
+ 
+     </Box>
   )
 }
 
