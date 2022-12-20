@@ -15,7 +15,8 @@ import CardActions from '@mui/material/CardActions';
 function Post(props) {
   return (
     <div>
-         <Card  sx={{margin:1}}>
+{/* estos son las cards del feed principal */}
+<Card  sx={{margin:1}}>
 
 <CardHeader
   avatar={

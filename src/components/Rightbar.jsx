@@ -16,7 +16,8 @@ const Rightbar = () => {
     <Box  flex={2}   sx={{display:{xs: "none", sm: "block"}}}>
       <Box width={300}>
      <Typography variant="h6" fontWeight={300} mt={2}>Friends</Typography>
-
+     
+     {/* estos son los avatares de los grupos de amigos */}
      <AvatarGroup max={6}>
       <Avatar alt="Remy Sharp" src="https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" />
       <Avatar alt="Travis Howard" src="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
@@ -29,6 +30,7 @@ const Rightbar = () => {
 
     </AvatarGroup>
 
+       {/* esta es la galeria de ultimas fotos */}
     <Typography variant="h6" fontWeight={300} mt={3}>Latest Pics</Typography>
 
     <ImageList variant="woven" cols={2} gap={8} rowHeight={300}>
@@ -71,6 +73,8 @@ const Rightbar = () => {
     </ImageListItem>
   
 </ImageList>
+
+   {/* aca estan las ultimas coversaciones */}
 <Typography variant="h6" fontWeight={300} mt={2}>Latest Conversations</Typography>
 
    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
