@@ -45,7 +45,7 @@ const Navbar = () => {
 
       <StyledToolbar>
 
-        <Typography variant="h6"   sx={{ display: { xs: "none", sm: "block" }}}>
+        <Typography component={Link} to="/" variant="h6"   sx={{textDecoration:"none", color:"inherit" , display: { xs: "none", sm: "block" }}}>
           SOCIAL APP 
         </Typography>
 
