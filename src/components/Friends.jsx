@@ -61,6 +61,18 @@ function Friends() {
           image="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
       </Card>
 
+      <Card sx={{ bgcolor: "pink", marginBottom: "1rem" }}>
+        <CardContent>
+          <Typography variant="h6" gutterBottom>Jason Meyers</Typography>
+          <Typography variant="body1" color="text.secondary">
+            Graphic Designer looking for expanding creative outputs </Typography>
+        </CardContent>
+        <CardMedia
+          component="img"
+          height={altura}
+          image="https://seqahkdnzhhrqlolhtsl.supabase.co/storage/v1/object/sign/imagenesblog/profile-man1.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZW5lc2Jsb2cvcHJvZmlsZS1tYW4xLmpwZyIsInRyYW5zZm9ybWF0aW9ucyI6IiIsImlhdCI6MTY3MTU4MTQyMSwiZXhwIjoxOTg2OTQxNDIxfQ.HkAUwYY74MAOGq_94gSpeUVKJSbq3ZmkFvrKqSPV64Y&t=2022-12-21T01%3A22%3A11.934Z" />
+      </Card>
+
 
 
     </Box>
