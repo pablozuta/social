@@ -28,7 +28,7 @@ function Market() {
   }, [])
   
   return (
-    <Box flex={4} p={3.5}>
+    <Box flex={4} p={1}>
      
     <div>
       {fetchError && ( <p>{fetchError}</p>)}
