@@ -4,11 +4,9 @@ import Post from "./Post"
 // aca se ingresa el componente "Post" pasandole props de url y nombre del post
 const Feed = () => {
   return (
-<<<<<<< HEAD
-    <Box flex={4} p={3.5}>
-=======
+
     <Box flex={4} p={1.5}>
->>>>>>> 8da940a8db68ac531ce97e85ae1d0875a401a1a7
+
      
    <Post url={"https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"} title={"Travel"} textpost={"  Make plans lightly. It definitely helps to make plans. But do it with the expectation that any of them could change. Nothing is set in stone. Could you view them as fluid, while trying to stick to them as best you can?"}
   />
