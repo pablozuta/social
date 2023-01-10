@@ -22,39 +22,38 @@ export default function App() {
   const darkTheme = createTheme({
     palette: {
       mode: mode,
-     
+
     }
   })
   return (
-    
-  
+
+
     <ThemeProvider theme={darkTheme}>
-    
-    <Box bgcolor={"background.default"} color={"text.primary"}>
 
-    
-    <Navbar />
-    <Stack direction="row" spacing={0.1} justifyContent="space-between">
-    <Sidebar setMode={setMode} mode={mode}/>
+      <Box bgcolor={"background.default"} color={"text.primary"}>
 
-    <Routes>
-    <Route path="/" element={<Feed />}/>
-    <Route path="/pages" element={<Pages />}/>
-    <Route path="/settings" element={<Settings />}/>
-    <Route path="/friends" element={<Friends />}/>
-    <Route path="/market" element={<Market />}/>
-    <Route path="/pages" element={<Pages />}/>
-    <Route path="/profile" element={<Profile />}/>
-    <Route path="/groups" element={<Groups />}/>
-    
 
-  
-    </Routes>
-    <Rightbar/>
-        
-      </Stack>
+        <Navbar />
+        <Stack direction="row" spacing={0.1} justifyContent="space-between">
+          <Sidebar setMode={setMode} mode={mode} />
 
-    </Box>
+          <Routes>
+            <Route path="/" element={<Feed />} />
+            <Route path="/pages" element={<Pages />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/friends" element={<Friends />} />
+            <Route path="/market" element={<Market />} />
+            <Route path="/pages" element={<Pages />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/groups" element={<Groups />} />
+          </Routes>
+
+
+          <Rightbar />
+
+        </Stack>
+
+      </Box>
 
     </ThemeProvider>
   );
