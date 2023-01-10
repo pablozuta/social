@@ -5,7 +5,7 @@ import React from 'react'
 function Friends() {
   let altura = "600px";
   return (
-    <Box flex={4} p={1}>
+    <Box flex={4} p={3.5}>
 
 <Typography variant="h3" gutterBottom>FRIENDS</Typography>
 
