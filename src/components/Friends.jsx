@@ -1,13 +1,13 @@
-import { FavoriteBorder } from '@mui/icons-material'
-import { Avatar, Box, Card, CardActions, CardContent, CardHeader, CardMedia, Checkbox, IconButton, Typography } from '@mui/material'
+
+import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material'
 import React from 'react'
 
 function Friends() {
   let altura = "600px";
   return (
-    <Box flex={4} p={3.5}>
+    <Box flex={4} p={1}>
 
-<Typography variant="h3" gutterBottom>FRIENDS</Typography>
+      <Typography variant="h3" gutterBottom>FRIENDS</Typography>
 
       <Card sx={{ bgcolor: "pink", marginBottom: "1rem" }}>
         <CardContent>

@@ -4,7 +4,7 @@ import { Box, Card, FormControlLabel, FormGroup, Switch, Typography } from '@mui
 
 function Settings() {
   return (
-    <Box flex={4} p={3.5}>
+    <Box flex={4} p={1}>
       <Typography variant="h3" gutterBottom>SETTINGS</Typography>
       <FormGroup>
         <FormControlLabel control={<Switch color="secondary" />} label="Notifications" />

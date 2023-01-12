@@ -16,12 +16,12 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { Link } from "react-router-dom";
 
 
-const Sidebar = ({mode, setMode}) => {
+const Sidebar = ({ mode, setMode }) => {
   return (
-    <Box  flex={1} p={1.5} sx={{display:{xs: "none", sm: "block"}, marginLeft:"-1rem"}}>
+    <Box flex={1} p={1.5} sx={{ display: { xs: "none", sm: "block" }, marginLeft: "-1rem" }}>
       <Box position="fixed">
         <List>
-          
+
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/">
               <ListItemIcon>
@@ -30,7 +30,7 @@ const Sidebar = ({mode, setMode}) => {
               <ListItemText primary="Home" />
             </ListItemButton>
           </ListItem>
-        
+
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/pages">
               <ListItemIcon>
@@ -39,7 +39,7 @@ const Sidebar = ({mode, setMode}) => {
               <ListItemText primary="Pages" />
             </ListItemButton>
           </ListItem>
-        
+
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/groups">
               <ListItemIcon>
@@ -48,7 +48,7 @@ const Sidebar = ({mode, setMode}) => {
               <ListItemText primary="Groups" />
             </ListItemButton>
           </ListItem>
-        
+
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/market">
               <ListItemIcon>
@@ -57,7 +57,7 @@ const Sidebar = ({mode, setMode}) => {
               <ListItemText primary="Market" />
             </ListItemButton>
           </ListItem>
-        
+
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/friends">
               <ListItemIcon>
@@ -66,7 +66,7 @@ const Sidebar = ({mode, setMode}) => {
               <ListItemText primary="Friends" />
             </ListItemButton>
           </ListItem>
-        
+
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/settings">
               <ListItemIcon>
@@ -75,7 +75,7 @@ const Sidebar = ({mode, setMode}) => {
               <ListItemText primary="Setting" />
             </ListItemButton>
           </ListItem>
-        
+
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/profile">
               <ListItemIcon>
@@ -84,23 +84,23 @@ const Sidebar = ({mode, setMode}) => {
               <ListItemText primary="Profile" />
             </ListItemButton>
           </ListItem>
-        
-        
+
+
           <ListItem disablePadding>
             <ListItemButton >
               <ListItemIcon>
                 <DarkModeIcon />
               </ListItemIcon>
-             <Switch onChange={(e)=>setMode(mode === "light" ? "dark" : "light")}/>
+              <Switch onChange={(e) => setMode(mode === "light" ? "dark" : "light")} />
             </ListItemButton>
           </ListItem>
-        
-        
-        
-        
+
+
+
+
         </List>
-      
-        </Box>
+
+      </Box>
 
     </Box>
   )

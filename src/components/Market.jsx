@@ -2,9 +2,15 @@ import { Box, Typography } from '@mui/material'
 
 import React from 'react'
 
-const Market = () => {
+function Market() {
   return (
-    <div>Market</div>
+    <Box flex={4} p={1}>
+
+      <Typography variant="h4" sx={{ display: { xs: "none", sm: "block" } }}> MARKET </Typography>
+
+      <img src="" alt="" />
+
+    </Box>
   )
 }
 

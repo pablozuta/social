@@ -2,11 +2,11 @@ import { Box, Typography } from '@mui/material'
 
 function Profile() {
   return (
-    <Box flex={4} p={3.5}>
-     
-    <Typography variant="h4"   sx={{ display: { xs: "none", sm: "block" }}}> PROFILE </Typography>
+    <Box flex={4} p={1}>
 
-    <img src="" alt="" />
+      <Typography variant="h4" sx={{ display: { xs: "none", sm: "block" } }}> PROFILE </Typography>
+
+      <img src="" alt="" />
 
     </Box>
   )
