@@ -70,7 +70,7 @@ function Friends() {
         <CardMedia
           component="img"
           height={altura}
-          image="https://seqahkdnzhhrqlolhtsl.supabase.co/storage/v1/object/sign/imagenesblog/profile-man1.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZW5lc2Jsb2cvcHJvZmlsZS1tYW4xLmpwZyIsInRyYW5zZm9ybWF0aW9ucyI6IiIsImlhdCI6MTY3MTU4MTQyMSwiZXhwIjoxOTg2OTQxNDIxfQ.HkAUwYY74MAOGq_94gSpeUVKJSbq3ZmkFvrKqSPV64Y&t=2022-12-21T01%3A22%3A11.934Z" />
+          image="https://images.unsplash.com/photo-1624561172888-ac93c696e10c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80" />
       </Card>
 
 
