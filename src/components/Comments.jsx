@@ -10,7 +10,7 @@ import Actions from './Actions';
 
 function Comments() {
     return (
-        <Box flex={4} p={1}>
+        <Box flex={4} >
             <List sx={{ width: '100%', maxWidth: 600, bgcolor: 'background.paper' }}>
                 <ListItem alignItems="flex-start">
                     <ListItemAvatar>
