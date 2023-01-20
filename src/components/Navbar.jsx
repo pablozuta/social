@@ -1,10 +1,9 @@
-import { AppBar, Box, Toolbar, styled, Typography, InputBase, Avatar } from "@mui/material";
+import { AppBar, Box, Toolbar, styled, Typography, Avatar,  ListItemButton, Switch } from "@mui/material";
 import MailIcon from '@mui/icons-material/Mail';
-import NotificationsIcon from '@mui/icons-material/Notifications';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
-import  { useState } from 'react';
+import { useState } from 'react';
 import { Link } from "react-router-dom";
 
 
@@ -36,47 +35,53 @@ const UserBox = styled(Box)(({ theme }) => ({
 
 
 
-const Navbar = () => {
+const Navbar = ({ mode, setMode }) => {
   //implementa el estado del menu de version movil
   const [open, setopen] = useState(false)
   return (
 
-    <AppBar position="sticky"  sx={{ bgcolor: "#A2CDCB" }}>
+    <AppBar position="sticky" sx={{ bgcolor: "#A2CDCB" }}>
 
       <StyledToolbar>
 
-        <Typography component={Link} to="/" variant="h6"   sx={{textDecoration:"none", color:"inherit" , display: { xs: "none", sm: "block" }}}>
-          SOCIAL APP 
+        <Typography component={Link} to="/" variant="h6" sx={{ textDecoration: "none", color: "inherit", display: { xs: "none", sm: "block" } }}>
+          SOCIAL APP
         </Typography>
 
         {/* este icono se mostrara solo en version movil */}
-        <AirportShuttleIcon  from sx={{ display: { xs: "block", sm: "none" } }} />
+        <MenuItem component={Link} to="/"> <AirportShuttleIcon from sx={{ display: { xs: "block", sm: "none" } }} />
+        </MenuItem>
 
-          <Icons>
-         
-            <MailIcon />
-            <NotificationsIcon />
-         
-          <Avatar sx={{ width: 30, height: 30 }} alt="Cindy Baker" src="https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-          onClick={(e)=>setopen(true)}/>
+
+
+
+
+        
+
+        <Icons>
+          <MailIcon />
+
+
+          <Avatar sx={{ width: 30, height: 30 }} alt="Cindy Baker" src="https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            onClick={(e) => setopen(true)} />
 
         </Icons>
 
 
-        <UserBox onClick={(e)=>setopen(true)}>
+        <UserBox onClick={(e) => setopen(true)}>
           <Avatar sx={{ width: 30, height: 30 }} alt="Cindy Baker" src="https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           <Typography variant="span">Alice</Typography>
         </UserBox>
 
       </StyledToolbar>
-      
-      
+
+
       <Menu
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
         open={open}
-        onClose={(e)=>setopen(false)}
-        
+        onClose={(e) => setopen(false)}
+
         anchorOrigin={{
           vertical: 'top',
           horizontal: 'right',
@@ -93,10 +98,13 @@ const Navbar = () => {
         <MenuItem component={Link} to="/friends">Friends</MenuItem>
         <MenuItem component={Link} to="/settings">Settings</MenuItem>
         <MenuItem component={Link} to="/profile">Profile</MenuItem>
-        <MenuItem onClick={(e)=>setopen(false)}>Close</MenuItem>
-        
+         <ListItemButton>
+          <Switch onChange={(e) => setMode(mode === "light" ? "dark" : "light")} />
+        </ListItemButton>
+        <MenuItem onClick={(e) => setopen(false)}>Close</MenuItem>
+
       </Menu>
-      
+
     </AppBar>
   )
 }

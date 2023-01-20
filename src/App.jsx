@@ -33,9 +33,9 @@ export default function App() {
       <Box bgcolor={"background.default"} color={"text.primary"}>
 
 
-        <Navbar />
+        <Navbar setMode={setMode} mode={mode} />
         <Stack direction="row" spacing={0.1} justifyContent="space-between">
-          <Sidebar setMode={setMode} mode={mode} />
+        <Sidebar setMode={setMode} mode={mode} />
 
           <Routes>
             <Route path="/" element={<Feed />} />
