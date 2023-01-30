@@ -1,0 +1,11 @@
+.card-login{
+    max-width: 900px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: auto;
+    height: 20rem;
+    margin-top: 10rem;
+}
