@@ -9,7 +9,7 @@ import Profile from "./components/Profile";
 import Groups from "./components/Groups";
 import Friends from "./components/Friends";
 import Market from "./components/Market";
-import Settings from "./components/Settings";
+
 import React from 'react'
 
 
@@ -39,10 +39,9 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Feed />} />
 
-            <Route path="/settings" element={<Settings />} />
+           
             <Route path="/friends" element={<Friends />} />
             <Route path="/market" element={<Market />} />
-
             <Route path="/profile" element={<Profile />} />
             <Route path="/groups" element={<Groups />} />
           </Routes>

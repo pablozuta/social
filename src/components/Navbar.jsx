@@ -96,7 +96,7 @@ const Navbar = ({ mode, setMode }) => {
         <MenuItem component={Link} to="/groups">Groups</MenuItem>
         <MenuItem component={Link} to="/market">Market</MenuItem>
         <MenuItem component={Link} to="/friends">Friends</MenuItem>
-        <MenuItem component={Link} to="/settings">Settings</MenuItem>
+        
         <MenuItem component={Link} to="/profile">Profile</MenuItem>
          <ListItemButton>
           <Switch onChange={(e) => setMode(mode === "light" ? "dark" : "light")} />

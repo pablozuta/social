@@ -10,7 +10,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 import GroupIcon from '@mui/icons-material/Group';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import PersonIcon from '@mui/icons-material/Person';
-import SettingsIcon from '@mui/icons-material/Settings';
+
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { Link } from "react-router-dom";
@@ -60,14 +60,7 @@ const Sidebar = ({ mode, setMode }) => {
             </ListItemButton>
           </ListItem>
 
-          <ListItem disablePadding>
-            <ListItemButton component={Link} to="/settings">
-              <ListItemIcon>
-                <SettingsIcon />
-              </ListItemIcon>
-              <ListItemText primary="Setting" />
-            </ListItemButton>
-          </ListItem>
+         
 
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/profile">
