@@ -9,3 +9,8 @@
     height: 20rem;
     margin-top: 10rem;
 }
+
+.menu:hover{
+    cursor: pointer;
+    
+}
