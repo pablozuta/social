@@ -7,7 +7,8 @@ function Friends() {
   return (
     <Box flex={4} p={1}>
 
-      <Typography variant="h3" gutterBottom>FRIENDS</Typography>
+     <br />
+     <br />
 
       <Card sx={{ bgcolor: "pink", marginBottom: "1rem" }}>
         <CardContent>

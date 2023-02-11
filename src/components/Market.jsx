@@ -1,8 +1,10 @@
 import { Box, Typography } from '@mui/material'
+import supabase from '../config/supabaseClient'
 
 import React from 'react'
 
 function Market() {
+  console.log(supabase);
   return (
     <Box flex={4} p={1}>
 
