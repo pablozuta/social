@@ -1,12 +1,23 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography} from '@mui/material'
+import ProfileCard from '../blocks/ProfileCard'
+import FriendsCard from '../blocks/FriendsCard'
 
 function Profile() {
   return (
     <Box flex={4} p={1}>
+      
+    <ProfileCard />
+   
+    <FriendsCard />
+    <FriendsCard />
+    <FriendsCard />
+    <FriendsCard />
+    <FriendsCard />
+    <FriendsCard />
+    <FriendsCard />
+    <FriendsCard />
+    
 
-      <Typography variant="h4" sx={{ display: { xs: "none", sm: "block" } }}> PROFILE </Typography>
-
-      <img src="" alt="" />
 
     </Box>
   )

@@ -1,8 +1,16 @@
+import { Card } from '@mui/material'
 import React from 'react'
 
 function FriendsCard() {
   return (
-    <div>FriendsCard</div>
+    <Card>
+    <div>
+      <h3>Name</h3>
+      <p>Biography and names </p>
+      </div>
+      <br />
+      <br />
+    </Card>
   )
 }
 
