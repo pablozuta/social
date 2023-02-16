@@ -7,9 +7,7 @@ import { useState } from "react";
 import { Route, Routes } from "react-router";
 import Profile from "./components/Profile";
 import Groups from "./components/Groups";
-import Friends from "./components/Friends";
 import Market from "./components/Market";
-
 import React from 'react'
 
 
@@ -38,9 +36,6 @@ export default function App() {
 
           <Routes>
             <Route path="/" element={<Feed />} />
-
-           
-            <Route path="/friends" element={<Friends />} />
             <Route path="/market" element={<Market />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/groups" element={<Groups />} />

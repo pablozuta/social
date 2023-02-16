@@ -1,4 +1,4 @@
-import { AppBar, Box, Toolbar, styled, Typography, Avatar,  ListItemButton, Switch } from "@mui/material";
+import { AppBar, Box, Toolbar, styled, Typography, Avatar, ListItemButton, Switch } from "@mui/material";
 import MailIcon from '@mui/icons-material/Mail';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -54,10 +54,6 @@ const Navbar = ({ mode, setMode }) => {
 
 
 
-
-
-        
-
         <Icons>
           <MailIcon />
 
@@ -92,16 +88,14 @@ const Navbar = ({ mode, setMode }) => {
         }}
       >
         <MenuItem component={Link} to="/">Home</MenuItem>
-        
         <MenuItem component={Link} to="/groups">Groups</MenuItem>
         <MenuItem component={Link} to="/market">Market</MenuItem>
-        <MenuItem component={Link} to="/friends">Friends</MenuItem>
-        
         <MenuItem component={Link} to="/profile">Profile</MenuItem>
-         <ListItemButton>
+        <MenuItem onClick={(e) => setopen(false)}>Close</MenuItem>
+        
+        <ListItemButton>
           <Switch onChange={(e) => setMode(mode === "light" ? "dark" : "light")} />
         </ListItemButton>
-        <MenuItem onClick={(e) => setopen(false)}>Close</MenuItem>
 
       </Menu>
 

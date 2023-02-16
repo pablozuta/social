@@ -49,17 +49,7 @@ const Sidebar = ({ mode, setMode }) => {
             </ListItemButton>
           </ListItem>
 
-          <ListItem disablePadding>
-            <ListItemButton component={Link} to="/friends">
-              <ListItemIcon>
-                <PersonIcon />
-              </ListItemIcon>
-              <ListItemText primary="Friends" />
-            </ListItemButton>
-          </ListItem>
-
-         
-
+      
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/profile">
               <ListItemIcon>
