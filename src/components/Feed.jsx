@@ -8,7 +8,7 @@ const Feed = () => {
     <Box flex={4} p={1}>
 
 
-      <Post url={"https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"} title={"Travel"} textpost={"  Make plans lightly. It definitely helps to make plans. But do it with the expectation that any of them could change. Nothing is set in stone. Could you view them as fluid, while trying to stick to them as best you can?"}
+      <Post url={"https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"} title={"Travel"} textpost={"Make plans lightly. It definitely helps to make plans. But do it with the expectation that any of them could change. Nothing is set in stone. Could you view them as fluid, while trying to stick to them as best you can?"}
       />
       <Post
         url={"https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=974&q=80"}

@@ -1,4 +1,4 @@
-import { Box, IconButton } from "@mui/material"
+import {IconButton } from "@mui/material"
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -44,6 +44,7 @@ function Post(props) {
   {props.textpost}
 
   </Typography>
+
 </CardContent>
 
 <CardActions >

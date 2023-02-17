@@ -12,6 +12,8 @@
   }
   
   .profile-card > h4 {
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
     color: palevioletred;
     font-weight: 600;
   }
