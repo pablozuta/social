@@ -8,15 +8,30 @@ function Profile() {
       
     <ProfileCard />
    
-    <FriendsCard image="https://e7.pngegg.com/pngimages/451/93/png-clipart-cartoon-comics-avatar-na-discord-comics-head.png" 
+    <FriendsCard image="https://avatars.githubusercontent.com/u/107578323?v=4" 
     name="Max" 
     bio="Sometimes, I like to pretend that I'm a chicken nugget." 
     handle="@jour_n_a_l" />
 
-    <FriendsCard image="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c9b1d578-8f88-45e9-b0d8-9e6ad6bc9dfe/delfmu5-bfc5d4bf-8dcd-49b4-a16d-7e597442af0e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M5YjFkNTc4LThmODgtNDVlOS1iMGQ4LTllNmFkNmJjOWRmZVwvZGVsZm11NS1iZmM1ZDRiZi04ZGNkLTQ5YjQtYTE2ZC03ZTU5NzQ0MmFmMGUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.81y9BR-CKjQSDVCVsKVv0fi9h9sID5ozNzXuPrInRFY" 
+    <FriendsCard image="https://avatars.githubusercontent.com/u/51833647?v=4" 
     name="Sophie" 
     bio="I'm a Gemini, so I have two personalities. And they're both equally annoying." 
     handle="@lifeG54" />
+
+    <FriendsCard image="https://avatars.githubusercontent.com/u/9838872?v=4" 
+    name="Jean Michele" 
+    bio="You see a boat filled with people. It has not sunk, but when you look again, you don’t see a single person on the boat. Why?" 
+    handle="@juju" />
+
+    <FriendsCard image="https://avatars.githubusercontent.com/u/37716815?v=4" 
+    name="E.Z.OP" 
+    bio="Don't ever think that you're not good enough—because you are." 
+    handle="@electroLegacy" />
+
+    <FriendsCard image="https://avatars.githubusercontent.com/u/9282824?v=4" 
+    name="Laurie" 
+    bio="Do you know what they call a Royale with Cheese?" 
+    handle="@good_s_21" />
     
     
 

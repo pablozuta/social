@@ -58,7 +58,7 @@ const Navbar = ({ mode, setMode }) => {
           <MailIcon />
 
 
-          <Avatar sx={{ width: 30, height: 30 }} alt="Cindy Baker" src="https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          <Avatar sx={{ width: 30, height: 30 }} alt="Cindy Baker" src="https://avatars.githubusercontent.com/u/87880432?v=4"
             onClick={(e) => setopen(true)} />
 
         </Icons>
