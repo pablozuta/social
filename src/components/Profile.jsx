@@ -32,6 +32,16 @@ function Profile() {
     name="Laurie" 
     bio="Do you know what they call a Royale with Cheese?" 
     handle="@good_s_21" />
+
+    <FriendsCard image="https://avatars.githubusercontent.com/u/17500430?v=4" 
+    name="Tom Hilbert" 
+    bio="You're pretty cool, but if you were a triangle, you'd be acute one." 
+    handle="@tom_hilb" />
+
+    <FriendsCard image="https://avatars.githubusercontent.com/u/107067269?v=4" 
+    name="Eva_l_p" 
+    bio="You see a black cat. Is it a witch’s cat?" 
+    handle="@spacepro89" />
     
     
 
