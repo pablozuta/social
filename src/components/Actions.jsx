@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, IconButton } from "@mui/material"
+import {IconButton } from "@mui/material"
 import ShareIcon from '@mui/icons-material/Share';
 import Checkbox from '@mui/material/Checkbox';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';

@@ -27,6 +27,7 @@ const Feed = () => {
         title={"Small Pathways"}
         textpost={"One of the more attractive aspects of Havana is to see how everyday life pans out in the city: happy children playing baseball on the street, street troubadours, a group of people doing maintenance on a Plymouth from 1955 in the middle of the street… and the peculiar way in which the people of Havana, the habaneros, project themselves, create, and live above all, enjoying life. Learn about their stories and the passions that move them as you enjoy an entertaining game of dominos and the atmosphere of tranquility that the city breathes. "}
       />
+      
 
 
     </Box>

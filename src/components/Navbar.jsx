@@ -1,10 +1,11 @@
-import { AppBar, Box, Toolbar, styled, Typography, Avatar, ListItemButton, Switch } from "@mui/material";
+import { AppBar, Box, Toolbar, styled, Typography, Avatar, ListItemButton, Switch, Button } from "@mui/material";
 import MailIcon from '@mui/icons-material/Mail';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
+import supabase from '../config/supabaseClient'
 
 
 
@@ -35,9 +36,18 @@ const UserBox = styled(Box)(({ theme }) => ({
 
 
 
-const Navbar = ({ mode, setMode }) => {
+const Navbar = ({ mode, setMode, authC }) => {
   //implementa el estado del menu de version movil
   const [open, setopen] = useState(false)
+
+   // supabase sing-up function
+   async function signInWithGitHub() {
+    const { data, error } = await supabase.auth.signInWithOAuth({
+      provider: 'github',
+    })
+
+  }
+
   return (
 
     <AppBar position="sticky" sx={{ bgcolor: "#A2CDCB" }}>
@@ -55,7 +65,8 @@ const Navbar = ({ mode, setMode }) => {
 
 
         <Icons>
-          <MailIcon />
+        <Button variant="outlined" color="secondary" onClick={signInWithGitHub}>LOGIN</Button>
+         
 
 
           <Avatar sx={{ width: 30, height: 30 }} alt="Cindy Baker" src="https://avatars.githubusercontent.com/u/87880432?v=4"
