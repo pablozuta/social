@@ -42,6 +42,23 @@ function Profile() {
     name="Eva_l_p" 
     bio="You see a black cat. Is it a witch’s cat?" 
     handle="@spacepro89" />
+
+
+
+    <FriendsCard image="https://avatars.githubusercontent.com/u/78498397?v=4" 
+    name="Edward Rucker" 
+    bio="Now go out and explore the world, learn new things, and make a difference." 
+    handle="@_astroW6" />
+
+    <FriendsCard image="https://avatars.githubusercontent.com/u/38103639?v=4" 
+    name="Ariel A. Carey" 
+    bio="I'm not here to waste your time; I'm here to make you think." 
+    handle="@lwvwl" />
+
+    <FriendsCard image="https://avatars.githubusercontent.com/u/68923434?v=4" 
+    name="Christine" 
+    bio="We are addicted to likes, views, and validation from strangers." 
+    handle="@just.a.girl" />
     
     
 

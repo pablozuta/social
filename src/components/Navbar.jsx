@@ -44,9 +44,8 @@ const Navbar = ({ mode, setMode, authC }) => {
    async function signInWithGitHub() {
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: 'github',
-    })
-
-  }
+    })}
+   // termino supabase sign-up 
 
   return (
 
