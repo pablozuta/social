@@ -30,7 +30,7 @@ function Post(props) {
     </IconButton>
   }
   title={props.title}
-  subheader="December 11, 2022"
+  subheader={props.date}
 />
 
 
