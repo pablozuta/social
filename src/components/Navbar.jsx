@@ -48,6 +48,12 @@ const Navbar = ({ mode, setMode, authC }) => {
   }
   // termino supabase sign-up 
 
+  // supabase signout
+  async function signout() {
+    const { error } = await supabase.auth.signOut()
+  }
+  // termino supabase signout
+
   return (
 
     <AppBar position="sticky" sx={{ bgcolor: "#A2CDCB" }}>
@@ -69,7 +75,7 @@ const Navbar = ({ mode, setMode, authC }) => {
             LOGIN
           </Button>
 
-          <Button variant="outlined" color="primary">
+          <Button variant="outlined" color="primary" onClick={signout}>
             LOGOUT
           </Button>
 
