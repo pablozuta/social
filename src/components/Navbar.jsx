@@ -40,12 +40,13 @@ const Navbar = ({ mode, setMode, authC }) => {
   //implementa el estado del menu de version movil
   const [open, setopen] = useState(false)
 
-   // supabase sing-up function
-   async function signInWithGitHub() {
+  // supabase sing-up function
+  async function signInWithGitHub() {
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: 'github',
-    })}
-   // termino supabase sign-up 
+    })
+  }
+  // termino supabase sign-up 
 
   return (
 
@@ -64,8 +65,14 @@ const Navbar = ({ mode, setMode, authC }) => {
 
 
         <Icons>
-        <Button variant="outlined" color="secondary" onClick={signInWithGitHub}>LOGIN</Button>
-         
+          <Button variant="outlined" color="secondary" onClick={signInWithGitHub}>
+            LOGIN
+          </Button>
+
+          <Button variant="outlined" color="primary">
+            LOGOUT
+          </Button>
+
 
 
           <Avatar sx={{ width: 30, height: 30 }} alt="Cindy Baker" src="https://avatars.githubusercontent.com/u/87880432?v=4"
@@ -102,7 +109,7 @@ const Navbar = ({ mode, setMode, authC }) => {
         <MenuItem component={Link} to="/market">Market</MenuItem>
         <MenuItem component={Link} to="/profile">Profile</MenuItem>
         <MenuItem onClick={(e) => setopen(false)}>Close</MenuItem>
-        
+
         <ListItemButton>
           <Switch onChange={(e) => setMode(mode === "light" ? "dark" : "light")} />
         </ListItemButton>

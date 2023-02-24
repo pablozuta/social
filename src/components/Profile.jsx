@@ -59,6 +59,23 @@ function Profile() {
     name="Christine" 
     bio="We are addicted to likes, views, and validation from strangers." 
     handle="@just.a.girl" />
+
+
+
+    <FriendsCard image="https://avatars.githubusercontent.com/u/38348296?v=4" 
+    name="BioHack" 
+    bio="I only do Discord, I live for awkwardness. I'm not lazy, I just really enjoy doing nothing. " 
+    handle="@bioHack" />
+
+    <FriendsCard image="https://avatars.githubusercontent.com/u/5871075?v=4" 
+    name="Kat" 
+    bio="I like not to listen to your problems yet still offer solutions; Just a meme machine." 
+    handle="@notChatGPT" />
+
+    <FriendsCard image="https://avatars.githubusercontent.com/u/3300?v=4" 
+    name="James Jackson" 
+    bio="Sometimes, I like to pretend that I'm a chicken nugget." 
+    handle="@valis_1984" />
     
     
 
