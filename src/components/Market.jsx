@@ -15,7 +15,7 @@ function Market() {
   }, [])
   const fetchData = async () => {
       const {data, error} = await supabase
-      .from('users')
+      .from('names')
       .select()
 
       if (error) {

@@ -1,9 +1,9 @@
 import { AppBar, Box, Toolbar, styled, Typography, Avatar, ListItemButton, Switch, Button } from "@mui/material";
-import MailIcon from '@mui/icons-material/Mail';
+
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
 import supabase from '../config/supabaseClient'
 
@@ -36,23 +36,30 @@ const UserBox = styled(Box)(({ theme }) => ({
 
 
 
-const Navbar = ({ mode, setMode, authC }) => {
+const Navbar = ({ mode, setMode}) => {
   //implementa el estado del menu de version movil
   const [open, setopen] = useState(false)
 
-  // supabase sing-up function
-  async function signInWithGitHub() {
-    const { data, error } = await supabase.auth.signInWithOAuth({
+ const [user, setUser] = useState(null)
+  
+  // supabase login function
+  const login = async () => {
+    await supabase.auth.signInWithOAuth({
       provider: 'github',
     })
-  }
-  // termino supabase sign-up 
+  };
+  // termino supabase login
 
   // supabase signout
   async function signout() {
     const { error } = await supabase.auth.signOut()
   }
   // termino supabase signout
+
+ /*  useEffect(() => {
+    const session = supabase.auth.getSession()
+    console.log(session);
+  }, [])   */
 
   return (
 
@@ -71,7 +78,7 @@ const Navbar = ({ mode, setMode, authC }) => {
 
 
         <Icons>
-          <Button variant="outlined" color="secondary" onClick={signInWithGitHub}>
+          <Button variant="outlined" color="secondary" onClick={login}>
             LOGIN
           </Button>
 
