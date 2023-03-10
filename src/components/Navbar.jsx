@@ -3,9 +3,8 @@ import { AppBar, Box, Toolbar, styled, Typography, Avatar, ListItemButton, Switc
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
-import { useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import supabase from '../config/supabaseClient'
 
 
 
@@ -36,30 +35,10 @@ const UserBox = styled(Box)(({ theme }) => ({
 
 
 
-const Navbar = ({ mode, setMode}) => {
+const Navbar = ({ mode, setMode }) => {
   //implementa el estado del menu de version movil
   const [open, setopen] = useState(false)
 
- const [user, setUser] = useState(null)
-  
-  // supabase login function
-  const login = async () => {
-    await supabase.auth.signInWithOAuth({
-      provider: 'github',
-    })
-  };
-  // termino supabase login
-
-  // supabase signout
-  async function signout() {
-    const { error } = await supabase.auth.signOut()
-  }
-  // termino supabase signout
-
- /*  useEffect(() => {
-    const session = supabase.auth.getSession()
-    console.log(session);
-  }, [])   */
 
   return (
 
@@ -78,15 +57,6 @@ const Navbar = ({ mode, setMode}) => {
 
 
         <Icons>
-          <Button variant="outlined" color="secondary" onClick={login}>
-            LOGIN
-          </Button>
-
-          <Button variant="outlined" color="primary" onClick={signout}>
-            LOGOUT
-          </Button>
-
-
 
           <Avatar sx={{ width: 30, height: 30 }} alt="Cindy Baker" src="https://avatars.githubusercontent.com/u/87880432?v=4"
             onClick={(e) => setopen(true)} />
