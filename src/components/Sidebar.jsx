@@ -1,4 +1,3 @@
-
 import { Box, Switch } from "@mui/material"
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -8,13 +7,11 @@ import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
 import GroupIcon from '@mui/icons-material/Group';
 import StorefrontIcon from '@mui/icons-material/Storefront';
-import PersonIcon from '@mui/icons-material/Person';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { Link } from "react-router-dom";
 
 
-const Sidebar = ({ mode, setMode }) => {
+const Sidebar = () => {
   return (
     <Box  flex={0} p={1.5} sx={{ display: { xs: "none", sm: "block" }, marginLeft: "-1rem" }}>
       <Box   >
@@ -59,19 +56,6 @@ const Sidebar = ({ mode, setMode }) => {
             </ListItemButton>
           </ListItem>
 
-
-          <ListItem disablePadding>
-            <ListItemButton >
-              <ListItemIcon>
-                <DarkModeIcon />
-              </ListItemIcon>
-              <Switch onChange={(e) => setMode(mode === "light" ? "dark" : "light")} />
-            </ListItemButton>
-          </ListItem>
-
-
-
-
         </List>
 
       </Box>
@@ -80,4 +64,4 @@ const Sidebar = ({ mode, setMode }) => {
   )
 }
 
-export default Sidebar
+export default Sidebar;

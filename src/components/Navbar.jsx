@@ -1,17 +1,15 @@
-import { AppBar, Box, Toolbar, styled, Typography, Avatar, ListItemButton, Switch, Button } from "@mui/material";
-
+import { AppBar, Box, Toolbar, styled, Typography, Avatar } from "@mui/material";
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from "react-router-dom";
-
 
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
   justifyContent: "space-between"
-})
+});
 
 
 
@@ -35,9 +33,9 @@ const UserBox = styled(Box)(({ theme }) => ({
 
 
 
-const Navbar = ({ mode, setMode }) => {
+const Navbar = () => {
   //implementa el estado del menu de version movil
-  const [open, setopen] = useState(false)
+  const [open, setopen] = useState(false);
 
 
   return (
@@ -93,14 +91,10 @@ const Navbar = ({ mode, setMode }) => {
         <MenuItem component={Link} to="/profile">Profile</MenuItem>
         <MenuItem onClick={(e) => setopen(false)}>Close</MenuItem>
 
-        <ListItemButton>
-          <Switch onChange={(e) => setMode(mode === "light" ? "dark" : "light")} />
-        </ListItemButton>
-
       </Menu>
 
     </AppBar>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
