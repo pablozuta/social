@@ -14,6 +14,7 @@ import CommentsTwo from './CommentsTwo';
 export default function Groups() {
   return (
     <Box flex={4} p={1}>
+
       {/* PRIMER CARD */}
       <Card sx={{ maxWidth: 700 }}>
         <CardHeader
@@ -79,6 +80,39 @@ export default function Groups() {
         <CommentsTwo />
       </Card>
       {/*  TERMINO SEGUNDO CARD */}
+
+
+      {/* INICIO TERCER CARD */}
+      <Card sx={{ maxWidth: 700 }}>
+        <CardHeader
+          avatar={
+            <Avatar alt="outdoor icon" src="https://i0.wp.com/laderasur.com/wp-content/uploads/2016/11/Captura-de-pantalla-2016-11-09-a-las-2.38.01-p.m..png?fit=887%2C589&ssl=1" />
+          }
+          title="Life Outdoor"
+
+        />
+        <CardMedia
+          sx={{ height: 440 }}
+          image="https://images.unsplash.com/photo-1525740353756-92f4fbde1625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+          title="open tenet"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            The Ten Essentials
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Packing the “Ten Essentials” whenever you step into the backcountry, even on day hikes, is a good habit. True, on a routine trip you may use only a few of them or none at all. It’s when something goes awry that you’ll truly appreciate the value of carrying these items that could be essential to your survival.
+
+            The original Ten Essentials list was assembled in the 1930s by The Mountaineers, a Seattle-based organization for climbers and outdoor adventurers, to help people be prepared for emergency situations in the outdoors. Back then, the list included a map, compass, sunglasses and sunscreen, extra clothing, headlamp/flashlight, first-aid supplies, fire starter, matches, knife and extra food.
+          </Typography>
+        </CardContent>
+        <CardActions>
+
+          <Button size="small">Read More</Button>
+        </CardActions>
+        <CommentsTwo />
+      </Card>
+      {/*  TERMINO TERCER CARD */}
 
 
     </Box>
