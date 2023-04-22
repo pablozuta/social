@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <Box  flex={0} p={1.5} sx={{ display: { xs: "none", sm: "block" }, marginLeft: "-1rem" }}>
+    <Box  flex={0} p={1.5} sx={{ display: { xs: "none",md: "none", lg: "block" }, marginLeft: "-1rem" }}>
       <Box   >
         <List className="sidebar-menu">
 

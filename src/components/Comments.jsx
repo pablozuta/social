@@ -4,7 +4,7 @@ import Divider from '@mui/material/Divider';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Typography from '@mui/material/Typography';
-import { Avatar, Box, CardHeader } from '@mui/material';
+import { Avatar, Box } from '@mui/material';
 import React from 'react';
 import Actions from './Actions';
 
@@ -59,7 +59,7 @@ function Comments() {
             </List>
 
         </Box>
-    )
+    );
 }
 
-export default Comments
+export default Comments;

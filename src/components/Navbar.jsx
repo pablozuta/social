@@ -37,6 +37,10 @@ const Navbar = () => {
   //implementa el estado del menu de version movil
   const [open, setopen] = useState(false);
 
+  function cerrarMenu() {
+    setopen(false);
+  }
+
 
   return (
 
@@ -56,14 +60,14 @@ const Navbar = () => {
 
         <Icons>
 
-          <Avatar sx={{ width: 30, height: 30 }} alt="Cindy Baker" src="https://avatars.githubusercontent.com/u/87880432?v=4"
+          <Avatar sx={{ width: 30, height: 30 }} alt="pablo avatar" src="https://avatars.githubusercontent.com/u/87880432?v=4"
             onClick={(e) => setopen(true)} />
 
         </Icons>
 
 
         <UserBox onClick={(e) => setopen(true)}>
-          <Avatar sx={{ width: 30, height: 30 }} alt="Cindy Baker" src="https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+          <Avatar sx={{ width: 30, height: 30 }} alt="pablo avatar" src="https://avatars.githubusercontent.com/u/87880432?v=4" />
           <Typography variant="span" className="menu">MENU</Typography>
         </UserBox>
 
@@ -85,11 +89,11 @@ const Navbar = () => {
           horizontal: 'right',
         }}
       >
-        <MenuItem component={Link} to="/">Home</MenuItem>
-        <MenuItem component={Link} to="/groups">Groups</MenuItem>
-        <MenuItem component={Link} to="/market">Market</MenuItem>
-        <MenuItem component={Link} to="/profile">Profile</MenuItem>
-        <MenuItem onClick={(e) => setopen(false)}>Close</MenuItem>
+        <MenuItem component={Link} to="/" onClick={cerrarMenu}>Home</MenuItem>
+        <MenuItem component={Link} to="/groups" onClick={cerrarMenu}>Groups</MenuItem>
+        <MenuItem component={Link} to="/market" onClick={cerrarMenu}>Market</MenuItem>
+        <MenuItem component={Link} to="/profile" onClick={cerrarMenu}>Profile</MenuItem>
+
 
       </Menu>
 

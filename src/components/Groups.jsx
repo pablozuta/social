@@ -94,7 +94,7 @@ export default function Groups() {
         <CardMedia
           sx={{ height: 440 }}
           image="https://images.unsplash.com/photo-1525740353756-92f4fbde1625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-          title="open tenet"
+          title="Ten Essentials"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
@@ -110,6 +110,7 @@ export default function Groups() {
 
           <Button size="small">Read More</Button>
         </CardActions>
+        <Comments />
         <CommentsTwo />
       </Card>
       {/*  TERMINO TERCER CARD */}

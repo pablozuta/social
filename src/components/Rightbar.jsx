@@ -12,7 +12,7 @@ import PhotoGallery from "../blocks/PhotoGallery";
 
 const Rightbar = () => {
   return (
-    <Box flex={2} sx={{ display: { xs: "none", sm: "block" } }}>
+    <Box flex={2} sx={{ display: { xs: "none", md: "none", lg: "block" } }}>
       <Box width={300}>
         <Typography variant="h6" fontWeight={300} mt={2}>Friends</Typography>
 
