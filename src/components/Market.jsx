@@ -12,10 +12,10 @@ import { Avatar, Box, CardHeader, Rating } from '@mui/material';
 
 export default function Market() {
   return (
-    <Box flex={4} p={1}>
+    <Box flex={4} p={1} >
 
       {/* PRIMER CARD */}
-      <Card sx={{ maxWidth: 500 }}>
+      <Card sx={{ maxWidth: 500, mx: 'auto' }}>
         <CardHeader
           avatar={
             <Avatar alt="john burton avatar" src="https://avatars.githubusercontent.com/u/16634828?v=4" />
@@ -49,7 +49,7 @@ export default function Market() {
       {/*  TERMINO PRIMER CARD */}
 
       {/* INICIO SEGUNDO CARD */}
-      <Card sx={{ maxWidth: 500 }}>
+      <Card sx={{ maxWidth: 500, mx: 'auto' }}>
         <CardHeader
           avatar={
             <Avatar alt="john burton avatar" src="https://avatars.githubusercontent.com/u/63784031?v=4" />
@@ -83,7 +83,7 @@ export default function Market() {
       {/*  TERMINO SEGUNDO CARD */}
 
       {/* INICIO TERCER CARD */}
-      <Card sx={{ maxWidth: 500 }}>
+      <Card sx={{ maxWidth: 500, mx: 'auto' }}>
         <CardHeader
           avatar={
             <Avatar alt="colibri avatar" src="https://avatars.githubusercontent.com/u/110330205?v=4" />
@@ -119,7 +119,7 @@ export default function Market() {
       {/*  TERMINO TERCER CARD */}
 
       {/* INICIO CUARTO CARD */}
-      <Card sx={{ maxWidth: 500 }}>
+      <Card sx={{ maxWidth: 500, mx: 'auto' }}>
         <CardHeader
           avatar={
             <Avatar alt="Nath avatar" src="https://avatars.githubusercontent.com/u/86206754?v=4" />
@@ -163,7 +163,7 @@ export default function Market() {
       {/*  TERMINO CUARTO CARD */}
 
       {/* INICIO QUINTO CARD */}
-      <Card sx={{ maxWidth: 500 }}>
+      <Card sx={{ maxWidth: 500, mx: 'auto' }}>
         <CardHeader
           avatar={
             <Avatar alt="Nath avatar" src="https://avatars.githubusercontent.com/u/67812625?v=4" />

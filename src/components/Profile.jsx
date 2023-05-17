@@ -1,10 +1,10 @@
-import { Box, Typography} from '@mui/material'
+import { Box} from '@mui/material'
 import ProfileCard from '../blocks/ProfileCard'
 import FriendsCard from '../blocks/FriendsCard'
 
 function Profile() {
   return (
-    <Box flex={4} p={1}>
+    <Box flex={4} p={1} >
       
     <ProfileCard />
    

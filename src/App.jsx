@@ -9,19 +9,14 @@ import Profile from "./components/Profile";
 import Groups from "./components/Groups";
 import Market from "./components/Market";
 import React from 'react'
-import supabase from './config/supabaseClient'
+
 
 
 
 
 export default function App() {
 
- 
-  // supabase sign-out
-  async function signout() {
-    const { error } = await supabase.auth.signOut()
-  }
-  const [mode, setMode] = useState("light");
+   const [mode, setMode] = useState("light");
 
   const darkTheme = createTheme({
     palette: {
@@ -34,12 +29,12 @@ export default function App() {
 
     <ThemeProvider theme={darkTheme}>
 
-      <Box bgcolor={"background.default"} color={"text.primary"}>
+      <Box bgcolor={"background.default"} color={"text.primary"}  >
 
 
         <Navbar setMode={setMode} mode={mode} />
-        <Stack direction="row" spacing={0.1} justifyContent="space-between">
-          <Sidebar setMode={setMode} mode={mode} authC="signInWithGitHub"/>
+        <Stack direction="row" spacing={0.1} sx={{  maxWidth: 'xl', mx: 'auto' }}>
+          <Sidebar setMode={setMode} mode={mode} />
 
           <Routes>
             <Route path="/" element={<Feed />} />

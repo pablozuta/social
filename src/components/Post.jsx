@@ -16,7 +16,7 @@ function Post(props) {
   return (
     <div>
 {/* estos son las cards del feed principal */}
-<Card  sx={{margin:1}}>
+<Card  sx={{ maxWidth: '700px', mx: 'auto' }}>
 
 <CardHeader
   avatar={

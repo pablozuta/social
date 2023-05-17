@@ -14,7 +14,7 @@ function FriendsCard(props) {
   }
 
   return (
-    <Card>
+    <Card >
       <div className="profile-card-followers">
         <div className="profile-card-avatar_followers">
           <img
