@@ -1,4 +1,5 @@
 import { Box} from '@mui/material'
+
 import ProfileCard from '../blocks/ProfileCard'
 import FriendsCard from '../blocks/FriendsCard'
 
