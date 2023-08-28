@@ -1,7 +1,10 @@
 import { AppBar, Box, Toolbar, styled, Typography, Avatar } from "@mui/material";
 import Menu from '@mui/material/Menu';
+import Login from './Login';
+import Logout from './Logout'
 import MenuItem from '@mui/material/MenuItem';
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
+import { useAuth0 } from '@auth0/auth0-react';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 
@@ -34,6 +37,7 @@ const UserBox = styled(Box)(({ theme }) => ({
 
 
 const Navbar = () => {
+  const { isAuthenticated } = useAuth0();
   //implementa el estado del menu de version movil
   const [open, setopen] = useState(false);
 
@@ -59,15 +63,16 @@ const Navbar = () => {
 
 
         <Icons>
+        {isAuthenticated? <Logout/> : <Login />}
 
-          <Avatar sx={{ width: 30, height: 30 }} alt="pablo avatar" src="https://avatars.githubusercontent.com/u/87880432?v=4"
-            onClick={(e) => setopen(true)} />
+          {/*    <Avatar sx={{ width: 30, height: 30 }} alt="pablo avatar" src="https://avatars.githubusercontent.com/u/87880432?v=4"
+            onClick={(e) => setopen(true)} /> */}
 
         </Icons>
 
 
         <UserBox onClick={(e) => setopen(true)}>
-          <Avatar sx={{ width: 30, height: 30 }} alt="pablo avatar" src="https://avatars.githubusercontent.com/u/87880432?v=4" />
+          {/* <Avatar sx={{ width: 30, height: 30 }} alt="pablo avatar" src="https://avatars.githubusercontent.com/u/87880432?v=4" /> */}
           <Typography variant="span" className="menu">MENU</Typography>
         </UserBox>
 
