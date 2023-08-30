@@ -8,6 +8,8 @@
 
 [Material UI](https://mui.com/) 
 
+[Auth0](https://auth0.com/)
+
 [Supabase](https://supabase.com/) 
 
 [Vercel](https://vercel.com/) 
