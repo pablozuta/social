@@ -1,4 +1,4 @@
-import {IconButton } from "@mui/material"
+import {IconButton, TextField } from "@mui/material"
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -11,8 +11,10 @@ import Checkbox from '@mui/material/Checkbox';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import Favorite from '@mui/icons-material/Favorite';
 import CardActions from '@mui/material/CardActions';
+import { useAuth0 } from '@auth0/auth0-react';
 
 function Post(props) {
+  const { user, isAuthenticated } = useAuth0();
   return (
     <div>
 {/* estos son las cards del feed principal */}
@@ -59,6 +61,8 @@ function Post(props) {
     <ShareIcon />
   </IconButton>
 </CardActions>
+{isAuthenticated && <TextField fullWidth label="Add a comment" id="fullWidth" />}
+
 
 </Card>
     </div>
