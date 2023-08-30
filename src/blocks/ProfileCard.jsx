@@ -26,7 +26,8 @@ function ProfileCard() {
 
         <div className="location-card">
           <img src="https://www.svgrepo.com/show/51526/location.svg" alt="svg icon location" class="location-icon" />
-          <p>Sao Paulo, Brazil</p>
+        {isAuthenticated ?<p>{user.address}</p>:<p>Sao Paulo, Brazil</p>}
+          
         </div>
         <a href="https://www.baeldung.com/">https://www.baeldung.com/</a>
         <div className="messages-item">
